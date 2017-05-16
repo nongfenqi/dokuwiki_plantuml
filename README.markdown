@@ -22,6 +22,11 @@ Requirements (for local PlantUML installation):
 
 See [PlantUML Installation Notes](http://plantuml.sourceforge.net/faqinstall.html) for troubleshooting.
 
+## Installation
+
+1. In **Dokuwiki->Admin->Configuration Settings**, check **Render locally**.
+1. cp plantuml.jar ../lib/plugins/plantuml/
+
 # Remote Rendering
 
 The plugin can use PlantUML server to generate diagrams. So nothing is required to be installed on the server running DokuWiki.
