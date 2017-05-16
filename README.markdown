@@ -1,7 +1,3 @@
-# This plugin is not maintained anymore
-
----
-
 This plugin integrates [PlantUML](http://plantuml.sourceforge.net) into the [DukuWiki](http://www.dokuwiki.org) wiki engine.
 It allows to generate UML graph images from simple description text block.
 
@@ -22,10 +18,10 @@ Requirements (for local PlantUML installation):
 
 See [PlantUML Installation Notes](http://plantuml.sourceforge.net/faqinstall.html) for troubleshooting.
 
-## Installation
+## Setup in Dokuwiki
 
 1. In **Dokuwiki->Admin->Configuration Settings**, check **Render locally**.
-1. cp plantuml.jar ../lib/plugins/plantuml/
+1. Copy plantuml.jar to `../lib/plugins/plantuml/`
 
 # Remote Rendering
 
