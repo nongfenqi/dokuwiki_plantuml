@@ -21,7 +21,7 @@ See [PlantUML Installation Notes](http://plantuml.sourceforge.net/faqinstall.htm
 ## Setup in Dokuwiki
 
 1. In **Dokuwiki->Admin->Configuration Settings**, check **Render locally**.
-1. Copy plantuml.jar to `../lib/plugins/plantuml/`
+1. Copy plantuml.jar to `..../lib/plugins/plantuml/`
 
 # Remote Rendering
 
