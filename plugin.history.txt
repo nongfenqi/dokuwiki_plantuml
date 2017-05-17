@@ -1,3 +1,8 @@
+date    2015-12-18
+
+  * Fix remote rendering
+____
+
 date    2015-06-19
 
   * Update default remote URL
