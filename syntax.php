@@ -112,7 +112,7 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
     function render($mode, Doku_Renderer $renderer, $data) {
         if ($mode == 'xhtml') {
             $img = DOKU_BASE . 'lib/plugins/plantuml/img.php?' . buildURLParams($data);
-            
+
             if($data['width']) {
                 $temp = $data['width'];
                 $data['width'] = 0;
@@ -121,7 +121,7 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
             } else {
                 $img_unresized = $img;
             }
-            
+
             $renderer->doc .= '<a title="' . $data['title'] . '" class="media" href="' . $img_unresized . '">';
             $renderer->doc .= '<img src="' . $img . '" class="media' . $data['align'] . '" title="' . $data['title'] . '" alt="' . $data['title'] .  '"';
             if ($data['width']) {
@@ -173,7 +173,7 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
             $cache = media_resize_image($cache, 'png', $data['width'], $data['height']);
         }
 
-        return file_exists($cache) ? $cache : false; 
+        return file_exists($cache) ? $cache : false;
     }
 
     /**
@@ -214,7 +214,7 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
             dbglog($in, 'No such plantuml input file');
             return false;
         }
-        
+
         $java = $this->getConf('java');
         $jar = $this->getConf('jar');
         $jar = realpath($jar);
@@ -239,7 +239,7 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
             return false;
         }
     }
-    
+
     /**
      * Dumps a message in a log file (named dokuwiki_plantuml.log and located in the Dokuwidi's cache directory)
      */
@@ -253,8 +253,10 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
     }
 
     function encodep($text) {
-        $data = utf8_encode($text);
-        $compressed = gzdeflate($data, 9);
+      //    $data = utf8_encode($text);
+      //  $data = utf8_encode("a->b:hello 陈灵敏 hah");
+    //  $compressed = gzdeflate($data, 9);
+        $compressed = gzdeflate($text, 9);
         return $this->encode64($compressed);
     }
 
