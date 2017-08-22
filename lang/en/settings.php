@@ -1,6 +1,6 @@
 <?php
 
-$lang['render_local']='Render localy';
+$lang['render_local']='Render locally';
 $lang['java']='The path to your Java runtime interpreter (eg. <code>/usr/bin/java</code>).';
 $lang['jar']='The path to the PlantUML jar file';
 $lang['remote_url']='The remote url of the PlantUML servlet';

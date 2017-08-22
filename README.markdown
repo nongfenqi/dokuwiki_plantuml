@@ -1,8 +1,4 @@
-# This plugin is not maintained anymore
-
----
-
-This plugin integrates [PlantUML](http://plantuml.sourceforge.net) into the [DukuWiki](http://www.dokuwiki.org) wiki engine.
+This plugin integrates [PlantUML](http://plantuml.sourceforge.net) into the [DokuWiki](http://www.dokuwiki.org) wiki engine.
 It allows to generate UML graph images from simple description text block.
 
 # Features
@@ -21,6 +17,11 @@ Requirements (for local PlantUML installation):
 * [Graphviz](http://www.graphviz.org) _You don't need this if you only want to generate sequence diagrams_
 
 See [PlantUML Installation Notes](http://plantuml.sourceforge.net/faqinstall.html) for troubleshooting.
+
+## Setup in Dokuwiki
+
+1. In **Dokuwiki->Admin->Configuration Settings**, check **Render locally**.
+1. Copy plantuml.jar to `..../lib/plugins/plantuml/`
 
 # Remote Rendering
 
