@@ -103,6 +103,8 @@ class syntax_plugin_plantuml extends DokuWiki_Syntax_Plugin {
         unset($data['height']);
         unset($data['align']);
         unset($data['title']);
+        // Allow plantuml to work in farm configuration
+        if( isset( $data['animal'] ) ){ unset( $data['animal'] ); }
         return getcachename(join('x', array_values($data)), ".plantuml.$ext");
     }
 
